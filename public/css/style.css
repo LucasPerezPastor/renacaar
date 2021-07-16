@@ -1,0 +1,459 @@
+body{
+	margin:0px;
+	padding:0px;
+}
+
+.no-link
+{
+    text-decoration:none;
+    color:black;
+}
+
+#menuToggle {
+    display: none;
+}
+.menu-icon {
+    display: none;
+}
+
+.nav-menu{
+	position:relative;
+	min-width:0px;
+}
+.nav {
+ width: 100%;
+  list-style-type: none;
+  margin: 0;
+  margin-bottom: 1em;
+  padding: 0;
+  overflow: hidden;
+  height: inherit;
+  background-color: #555;
+  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+   display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+   display: -ms-flexbox;      /* TWEENER - IE 10 */
+   display: -webkit-flex;     /* NEW - Chrome */
+   display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+}
+
+.nav li a{
+    height: inherit;
+    display: inline-block;
+    color: white;
+  	/*text-align: center;*/
+  	padding: 14px 16px;
+  	text-decoration: none;
+}
+
+
+
+/* Change the link color to #111 (black) on hover */
+.nav li a:hover {
+  background-color: #111;
+}
+
+
+ 
+
+
+.active {
+  background-color: #4CAF50;
+}
+
+
+.templatetable {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  margin:1em;
+}
+
+.templatetable td, .templatetable th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.templatetable tr:nth-child(even){background-color: #f2f2f2;}
+
+.templatetable tr:hover {background-color: #ddd;}
+
+.templatetable th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
+
+.w30{
+	width:30% !important;
+}
+.w60{
+	width:60% !important;
+}
+.w75{width:75% !important;}
+.w90{
+	width:90% !important;
+}
+
+.w100{
+	width:100% !important;
+}
+.m-auto{
+	margin:auto;
+}
+.formulariobusqueda 
+{
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  margin: 10px;
+  box-shadow: 2px 2px 10px #666;
+}
+
+.formulario{
+	box-shadow: 2px 2px 10px #666;
+	margin: 10px;
+	 border-radius: 5px;
+}
+
+.formulariobusqueda div{
+  padding: 5px 5px;
+  margin: 8px 0;
+}
+
+.formulariobusqueda input[type=submit] {
+  width: 95%;
+  text-align: center;
+  background-color: #4CAF50;
+  color: white;
+  padding: 5px 5px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.formulario input[type=text],.formulario input[type=password],.formulario input[type=number],.formulario input[type=email], .formulario select, .formulario input[type=date] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.formulario input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.formulario input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.formulario div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  
+}
+
+
+.zoom {
+  transition: transform .2s; /* Animation */
+}
+
+.zoom:hover {
+  transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+ filter: drop-shadow(2px 2px 2px #00CC00);
+}
+
+.card-message
+{
+	border-radius: 5px;
+  	background-color: #45a049;
+  	margin: 10px auto 10px auto;
+  	box-shadow: 2px 2px 10px #666;
+  	text-align:center;
+ 	padding:10px;
+ 	 border-radius: 5px;
+}
+
+.card{
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+ box-shadow: 2px 2px 10px #666;
+  margin: 10px auto 10px auto;
+
+}
+.card-head{
+	width:90%;
+	margin-right:auto;
+  	margin-left: auto;
+  	margin-top:8px;
+  	margin-bot: 8px;
+  	padding: 12px 20px;
+  	 text-align: center;
+  	display: inline-block;
+  	border: 1px solid #ccc;
+  	border-radius: 4px;
+  	box-sizing: border-box;
+  	background-color: white;
+}
+.card-title{
+  min-width: 40%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: #45a049;
+  margin-right:auto;
+  margin-left: auto;
+}
+.card-text{
+  min-width: 40%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+   background-color: white;
+   margin-right:auto;
+  margin-left:auto;
+}
+
+header
+{
+	
+	min-height:	10vh;
+	/* min-height:8em;*/
+	padding:0.5em;
+
+	margin:0px;
+	display:flex;
+	
+	flex-direction: row;
+	
+}
+.header-logo
+{
+	margin:auto;
+	display: inline-block;
+	flex-grow: 1;
+	text-align:center;
+}
+
+.header-title
+{
+	
+	text-align:center;
+	height:100%;
+	padding:10px;
+	border-radius: 20px;
+	box-shadow: 2px 2px 7px rgb(60,60,60);
+	
+  	background-color: #45a049;
+	display: inline-block;
+	margin:auto;
+	flex-grow: 8;
+}
+.header-login
+{
+	padding:10px;
+	text-align:left;
+	height:100%;
+	display: inline-block;
+	flex-grow: 1
+}
+
+.header-login a{
+	 width: 100%;
+ 	 display: inline-block;
+
+}
+
+.header-login img
+{
+	padding:5px;
+}
+.header-title50
+{
+	font-size:2em;	
+}
+.header-title25{
+	font-size:1em;	
+}
+
+/**LOGIN**/
+.login
+{
+	list-style-type: none;
+  	margin: 0;
+  	margin-bottom: 1em;
+  	padding: 0;
+  	overflow: hidden;	
+}
+.login li{padding:2px;}
+.login li a {text-decoration:none;color:black;}
+.login li a:link {}
+.login li a:visited {}
+.login li a:active {}
+.login li a:hover{}
+
+.strong
+{
+	font-weight: bold;
+}
+
+.card-portada
+{
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  margin: 10px;
+  padding:1em;
+  box-shadow: 2px 2px 10px #666;
+}
+
+.card-links{
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  margin: 1em;
+  padding:1em;
+  box-shadow: 2px 2px 10px #666;
+  display:inline-block;
+}
+.card-links img{padding:0px 1em 0px 1em;}
+
+
+/* -------------------MEDIA QUERIES ---------------*/
+
+/* Extra small devices (phones, 600px and down) */
+@media all and (max-width: 600px) 
+{
+	.nav-menu
+	{
+	     width: 100%;
+	     min-height: 50px;
+		 background-color: #555;
+    }
+    
+	 .menu-icon {
+        width: 40px;
+        height: inherit;
+        display: block;
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        line-height:0px;
+    }
+    
+	.nav
+	{
+		font-size:xx-large;
+		display: block;
+        max-height: 0;
+    	overflow: hidden;
+    	-webkit-transition: max-height 0.3s;
+    	-moz-transition: max-height 0.3s;
+        -ms-transition: max-height 0.3s;
+        -o-transition: max-height 0.3s;
+    	transition: max-height 0.3s;
+	}
+	
+	#menuToggle:checked ~ ul {
+         max-height: 350px;
+        /*Para fazer com que o menu saia da esquerda ou direita, você deve trocar max-height por max-width*/
+    }
+    
+    .card-title{width: 90%;}
+    .card-text{width: 90%;}
+    .card{width: 90% !important;}
+    
+    
+	header{
+	 flex-direction: column;
+	}
+	.header-logo
+	{
+	
+	
+	}
+	.header-login
+	{
+		font-size:large;
+	}
+	 .login li, .login li a {display:inline;}
+	.header-title
+	{
+		
+	}
+	
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) 
+{
+	.nav
+	{
+		font-size:x-large;
+	}
+	header{
+	 flex-direction: column;
+	}
+	
+	.header-login
+	{
+		font-size:x-large;
+
+	}
+	
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) 
+{
+	.nav
+	{
+		font-size:large;
+	}
+	header{
+	 flex-direction: row;
+	}
+	.header-login
+	{
+		font-size:large;
+	}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) 
+{
+	header{
+	 flex-direction: row;
+	}
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) 
+{
+	header{
+	 flex-direction: row;
+	}
+} 
